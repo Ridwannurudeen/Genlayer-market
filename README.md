@@ -41,7 +41,9 @@ Docs → https://docs.genlayer.com
 - [GenLayer Studio/Simulator](https://github.com/genlayerlabs/genlayer-studio) running locally  
 - Git
 
-## Step 1: Start with the Official Boilerplate
+## Steps attached below:
+
+**step 1 Start with the Official Boilerplate**
 
 The best starting point is GenLayer's own project boilerplate (includes football prediction market example):
 
@@ -57,9 +59,9 @@ pip install -r requirements.txt
 cd app
 npm install
 
+###Step 2: Create/Adapt an Intelligent Contract
 
-**Step 2: Create/Adapt an Intelligent Contract**
-
+```bash
 
 from genlayer import Contract as gl
 import typing, json
@@ -100,14 +102,15 @@ class GeneralPredictionMarket(gl.Contract):
             return parsed
         raise Exception("Consensus failed")
 
+###Step 3: Build Frontend Fast with Lovable.devGo to https://lovable.dev  
 
-        Step 3: Build Frontend Fast with Lovable.devGo to https://lovable.dev  
 New project → chat with AI:
 "Create dark-themed prediction market dashboard: cards with question, Yes/No percentages, volume, mock vote buttons, search bar, create market button. Integrate GenLayer data."
 Export code → drop into /app folder of boilerplate  
 Connect via GenLayerJS SDK (in boilerplate)
 
-Step 4: Test & RunRun simulator  
+###Step 4: Test & RunRun simulator  
+
 npm run dev in /app  
 Deploy contract, update .env with address  
 Test mock votes + resolution
